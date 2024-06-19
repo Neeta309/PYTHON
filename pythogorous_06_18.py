@@ -1,4 +1,4 @@
-my_tuple = [3, 4, 5]
+my_tuple = (3, 4, 5)
 
 pythogorous = False
 
