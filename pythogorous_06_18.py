@@ -1,15 +1,15 @@
-my_tuple = (3, 4, 5)
+#Input three numbers
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+num3 = int(input("Enter the third number: "))
 
-pythogorous = False
+# my_tuple = (num1, num2, num3)
 
-if pow(my_tuple[0], 2) == pow(my_tuple[1], 2) + pow(my_tuple[2], 2):
-  pythogorous = True
+#Check if the numbers form a Pythagorean Triplet
+if(num1 ** 2 + num2 ** 2 == num3 ** 2 ) or \
+  (num2 ** 2 + num1 ** 2 == num3 ** 2) or \
+  (num3 ** 2 + num3 ** 2 == num1 ** 2):
+    print(f"{num1}, {num2} and {num3} form a Pythagorean Triplet.")
   
-elif pow(my_tuple[1], 2) == pow(my_tuple[0], 2) + pow(my_tuple[2], 2):
-  pythogorous = True
-
-elif pow(my_tuple[2], 2) == pow(my_tuple[1], 2) + pow(my_tuple[0], 2):
-  pythogorous = True
-
-
-print(pythogorous)
+else:
+  print(f"{num1}, {num2} and {num3} do not form a Pythagorean Triplet.")
